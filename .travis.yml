@@ -1,0 +1,17 @@
+language: java
+jdk: oraclejdk8
+install: true
+addons:
+  sonarcloud:
+    organization: definelogic
+    token:
+      secure:
+script:
+  ./gradlew clean check jacocoTestReport sonarqube build
+
+cache:
+  directories:
+    - $HOME/.m2/repository
+    - $HOME/.sonar/cache
+    - $HOME/.gradle
+    - .gradle
