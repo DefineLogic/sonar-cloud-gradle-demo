@@ -9,5 +9,5 @@ public class SonarCloudGradleDemoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SonarCloudGradleDemoApplication.class, args);
 	}
-
+//testss
 }
